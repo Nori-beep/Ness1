@@ -1,0 +1,197 @@
+จัดทำโค้ดฉบับแก้ไขให้เรียบร้อยแล้วครับ โดยมีการเพิ่มรูปภาพตัวอย่างกลุ่มเข้าไปในแต่ละส่วนตามลำดับที่แจ้งมา พร้อมปรับขนาดรูปให้สวยงามและคงโครงสร้างเดิมไว้ 100% ครับ
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nori Design - Official</title>
+<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#FFF5F0; 
+--main:#FF9E7D; 
+--dark:#F26B8A; 
+--white:#FFFFFF;
+--glow:rgba(255,158,125,0.4);
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Mitr',sans-serif;}
+body{
+background:var(--bg);
+display:flex;
+justify-content:center;
+}
+.container{
+max-width:500px;
+width:100%;
+padding:20px 15px 40px;
+}
+.section{
+background:var(--white);
+border-radius:20px;
+padding:25px 20px;
+margin-bottom:20px;
+box-shadow:0 8px 20px rgba(0,0,0,0.05);
+border:2px solid var(--main);
+}
+h1,h2,h3{color:var(--dark);}
+.center{text-align:center;}
+.logo{
+width:150px;height:150px;
+border-radius:50%;
+overflow:hidden;
+margin:0 auto 20px;
+box-shadow:0 6px 20px var(--glow);
+}
+.logo img{width:100%;height:100%;object-fit:cover;}
+.badges{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+margin-bottom:20px;
+}
+.badge{
+background:#fff;
+padding:8px 16px;
+border-radius:25px;
+box-shadow:0 4px 10px var(--glow);
+font-size:13px;
+color:var(--dark);
+}
+.btn{
+display:block;
+text-align:center;
+padding:14px;
+border-radius:25px;
+text-decoration:none;
+margin-top:15px;
+font-weight:500;
+}
+.btn-outline{
+background:#fff;
+border:2px dashed var(--main);
+color:var(--dark);
+}
+.btn-main{
+background:var(--main);
+color:#fff;
+}
+.step{
+display:flex;
+align-items:center;
+gap:12px;
+margin-bottom:12px;
+}
+.step-num{
+background:var(--main);
+color:#fff;
+width:26px;height:26px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:13px;
+}
+.footer{
+text-align:center;
+margin-top:30px;
+}
+.socials{
+display:flex;
+gap:8px;
+justify-content:center;
+margin-top:15px;
+}
+.socials a{
+flex:1;
+max-width:100px;
+text-align:center;
+padding:8px;
+border-radius:25px;
+background:#fff;
+text-decoration:none;
+color:var(--dark);
+font-size:13px;
+border:1px solid #ffeef5;
+}
+.small{font-size:12px;opacity:.7;margin-top:10px;}
+/* สไตล์เพิ่มเติมสำหรับรูปภาพกลุ่ม */
+.group-img {
+width: 100%;
+border-radius: 15px;
+margin-top: 10px;
+margin-bottom: 5px;
+display: block;
+border: 1px solid #eee;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="section center" style="border:none;box-shadow:none;background:transparent;">
+<div class="logo">
+<img src="https://i.postimg.cc/nz7wYtt3/pr-bch-d.jpg" alt="Nori Design Logo">
+</div>
+<h1>Nori Design</h1>
+<p style="color:var(--dark);opacity:.8;margin:10px 0 20px;">
+ยินดีต้อนรับเข้าสู้ร้านโนริค่า มีสะสมแต้ม🌻
+</p>
+<div class="badges">
+<div class="badge">🎨 ทำป้าย</div>
+<div class="badge">✨ สติกเกอร์</div>
+<div class="badge">💻 เว็บร้านค้า</div>
+<div class="badge">👥 ดึงเข้ากลุ่ม</div>
+</div>
+<a href="https://linkbio.co/noridesign" class="btn btn-outline">
+⭐️ ตัวอย่างกลุ่มต่างๆ
+</a>
+</div>
+
+<div class="section">
+<h2>📍 กลุ่มที่ดึงเมลเอง</h2>
+
+<img src="https://i.postimg.cc/pr7dz8YR/mi-m-ch-x-1794-20260327193814.png" alt="กลุ่มนี่เส้นปะ" class="group-img">
+<a href="https://drive.google.com/drive/folders/1YKwLAZogYhZKBWPBxGKTGVwzR3zcEDel" class="btn btn-main" style="margin-bottom:20px;">กลุ่มนี่เส้นปะ</a>
+
+<img src="https://i.postimg.cc/DfW4yycv/mi-m-ch-x-303-20260406173503.png" alt="กลุ่ม INKY GROUP" class="group-img">
+<a href="https://drive.google.com/drive/folders/1Ye9suMpDDivZ45bzRfnQ0f-o1w0dEHvQ" class="btn btn-main" style="margin-bottom:20px;">กลุ่ม INKY GROUP</a>
+
+<img src="https://i.postimg.cc/J0W8Lqq1/mi-m-ch-x-248-20260318181340.png" alt="กลุ่มลายเส้น Belinda" class="group-img">
+<a href="https://drive.google.com/drive/folders/1EHSj38mZ9XxLsmS1WXyrjTIOsl7sjGQK" class="btn btn-main" style="margin-bottom:20px;">กลุ่มลายเส้น Belinda</a>
+
+<img src="https://i.postimg.cc/fb01RdkR/mi-m-ch-x-230-20260310200548.png" alt="Still drawing v1" class="group-img">
+<a href="https://drive.google.com/drive/folders/1fItAncfAu3g91k6dYNnX7EEihn3dj4kS" class="btn btn-main">Still drawing v1</a>
+</div>
+
+<div class="section">
+<h2>📋 ขั้นตอนการสั่ง</h2>
+<div class="step"><div class="step-num">1</div><div>ดูตัวอย่าง/แคปรูปกลุ่มที่สนใจ</div></div>
+<div class="step"><div class="step-num">2</div><div>ทักเฟสบุ๊คแจ้งข้อมูล</div></div>
+<div class="step"><div class="step-num">3</div><div>รวมยอด และโอนเงิน</div></div>
+<div class="step"><div class="step-num">4</div><div>รอดึงเข้ากลุ่มได้เลย</div></div>
+<div style="margin-top:15px; padding:10px; border-radius:10px; background:#FFF0F0; border:1px solid var(--dark);">
+    <p style="font-size:13px; color:var(--dark);"><strong>📍 กฎของร้าน 📍</strong><br>
+    - โอนเงินแล้วไม่รับโอนคืนทุกกรณี<br>
+    - โอนผิดโอนเกินทางร้านไม่รับผิดชอบ</p>
+</div>
+</div>
+
+<div class="footer">
+<a href="https://www.facebook.com/nori.desing?" class="btn btn-main">ติดต่อสอบถามคลิก 🎀</a>
+<div class="socials">
+<a href="https://www.facebook.com/nori.desing?">Facebook</a>
+<a href="#">Instagram</a>
+<a href="#">LINE</a>
+</div>
+<p class="small">
+© 2026 Nori Design
+</p>
+</div>
+
+</div>
+</body>
+</html>
+
+```
